@@ -1,12 +1,14 @@
+function turnOn() {
 
-function onChangeLight() {
-    let imageElement = document.getElementById("light");
-    if(imageElement.src.math == 'on') {
-        imageElement.src = './assets/on.gif';
-    } else {
-        imageElement.src = './assets/off.gif';
-    }
+   let imageElement = document.getElementById("light");
+   imageElement.src = "./assets/on.gif";
 }
+
+function turnOff() {
+
+    let imageElement = document.getElementById("light");
+    imageElement.src = "./assets/off.gif";
+ }
  
 
 
