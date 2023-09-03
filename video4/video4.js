@@ -18,3 +18,7 @@ console.log(new Date());
 
 console.log(text)
 console.log(a)
+
+let myName = `Nguyen 
+'Viet' Quan`;
+console.log(myName);
