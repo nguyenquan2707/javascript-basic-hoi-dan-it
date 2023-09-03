@@ -1,0 +1,6 @@
+#https://www.geeksforgeeks.org/where-to-put-javascript-in-an-html-document/?ref=lbp
+
+# 1. Add script ở ngoài head và body
+# 2. Add script ở trong head
+
+#onclick="myFunction()" : Khi gọi function phải có thêm dấu ()
