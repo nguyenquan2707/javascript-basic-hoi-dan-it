@@ -7,17 +7,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hoi dan IT voi ERIC</title>
 </head>
-<!-- <script>
-
-document.write(5);
-</script> -->
 
 <body>
     <h1> Hello world from HTML</h1>
+    <h1 id="demo"></h1>
+    <button onclick="resizeTo()">Click to resize</button>
+    <button onclick="openWindown()">Click to open Tab</button>
+    <button onclick="closeWindown()">Click to close Tab</button>
+    <button onclick="viewOnElement()">Click to view on Element</button>
+    <button onclick="viewWindown()">Click to view</button>
 </body>
 
 <script>
 
-    document.write(5);
-    </script>
+    function resizeTo() {
+        console.log("Goo here.");
+        console.log(window.screen.availWidth);
+        console.log(window.screen.availHeight);
+        //why it loop
+        // window.resizeTo(window.screen.availWidth / 2, window.screen.availHeight / 2);
+    }
+
+    function closeWindown() {
+        window.close();
+    }
+
+    function openWindown() {
+        // Open new tab
+        window.open();
+    }
+
+    function viewOnElement() {
+        let h1Elememt = document.getElementById("demo");
+        let height = window.innerHeight;
+       let width = window.innerWidth;
+
+       let result = "Height=" + height + " ,width=" + width;
+        h1Elememt.innerHTML = result;
+    }
+
+    function viewWindown() {
+       let height = window.innerHeight;
+       let width = window.innerWidth;
+
+       console.log(height, " ", width);
+    //    view height and width of windown on browser
+       document.write("Height=",height + " ,width=" + width);
+    }
+   
+</script>
 </html>
