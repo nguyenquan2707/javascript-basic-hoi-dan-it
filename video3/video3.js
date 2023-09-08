@@ -1,23 +1,29 @@
 console.log(`A bc `);
 
-let a = {}
-
-//Khai báo gồm key và value
-//Key ko nên có dấu cách
-
-let person = {
-    name: "Quan",
-    address: "Hcm",
-    methodTest: () => {
-        console.log("Hi...");
-        return `Hi`;
-    }
+let a = {
+    name: "Q",
+    age: 35
 }
 
-console.log("type of a = " , typeof a);
-console.log("name =  " , person.name);
-// https://www.youtube.com/watch?v=xEBkBJDgAY4&list=PLncHg6Kn2JT5dfQqpVtfNYvv3EBVHHVKo&index=12
-// Cách này lợi thế hơn
-console.log("Hoặc truy cập name bằng " , person['name']);
-const test = person.methodTest();
-console.log(test);
+console.log(a);
+
+let b = ["A", "B", "C"];
+
+console.log(`type of b = `, typeof b, b); //https://ibb.co/D8BrtT3
+
+// https://ibb.co/9y4QRmD
+
+console.log(b[0]);
+
+let customers = [
+    {
+        name: "A",
+        age: 23
+    },
+    {
+        name: "B",
+        age: 22
+    }
+];
+
+console.log(customers);
