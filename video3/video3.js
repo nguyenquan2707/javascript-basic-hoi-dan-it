@@ -1,14 +1,16 @@
 console.log(`A bc `);
 
-function testFunc(first, second, third) {
-    console.log(`first=`, first);
+//normal functions
+// function sum(first, second) {
+//     return first + second;
+// }
 
-    if(second == 2) return;
+//arrow functions
+// let sum = (first, second) => {
+//     return first + second;
+// }
+// console.log(`sum = `, sum(2,1));
 
-    console.log(`second=`, second);
+let sum = (first, second) => first + second;
 
-    return first + second;
-}
-
-console.log("sum=", testFunc(1,1));
-console.log("sum=", testFunc(1,2));
+console.log(`sum = `, sum(2,1));
