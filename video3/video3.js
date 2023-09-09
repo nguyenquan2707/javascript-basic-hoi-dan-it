@@ -1,5 +1,8 @@
 console.log(`A bc `);
-
-for(let i = 0; i < 10; i ++) {
-    console.log('i = ', i);
+function sum(a, b) {
+    return a + b;
 }
+
+console.log(sum(1,1));
+
+document.getElementById("demo").innerHTML = `Sum = ${sum(1, 2)}`;
