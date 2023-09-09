@@ -1,8 +1,14 @@
 console.log(`A bc `);
-function sum(a, b) {
-    return a + b;
+
+function testFunc(first, second, third) {
+    console.log(`first=`, first);
+
+    if(second == 2) return;
+
+    console.log(`second=`, second);
+
+    return first + second;
 }
 
-console.log(sum(1,1));
-
-document.getElementById("demo").innerHTML = `Sum = ${sum(1, 2)}`;
+console.log("sum=", testFunc(1,1));
+console.log("sum=", testFunc(1,2));
