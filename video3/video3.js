@@ -1,16 +1,16 @@
 console.log(`A bc `);
-
-//normal functions
-// function sum(first, second) {
-//     return first + second;
-// }
-
-//arrow functions
-// let sum = (first, second) => {
-//     return first + second;
-// }
-// console.log(`sum = `, sum(2,1));
-
+//functions
 let sum = (first, second) => first + second;
 
 console.log(`sum = `, sum(2,1));
+
+let person = {
+    name: "Q",
+    address: "TV",
+    //methods
+    getName: function() {
+        return this.name;
+    }
+}
+
+console.log(person.getName());
