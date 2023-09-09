@@ -1,29 +1,10 @@
 console.log(`A bc `);
 
-let a = {
-    name: "Q",
-    age: 35
-}
+let a = 5;
+let b = 5;
+console.log(`Compare a vs b `, a == b);
 
-console.log(a);
-
-let b = ["A", "B", "C"];
-
-console.log(`type of b = `, typeof b, b); //https://ibb.co/D8BrtT3
-
-// https://ibb.co/9y4QRmD
-
-console.log(b[0]);
-
-let customers = [
-    {
-        name: "A",
-        age: 23
-    },
-    {
-        name: "B",
-        age: 22
-    }
-];
-
-console.log(customers);
+let c = 5;
+let d = '5';
+console.log(`Compare c vs d `, c == d);
+console.log(`Compare c vs d `, c === d);
