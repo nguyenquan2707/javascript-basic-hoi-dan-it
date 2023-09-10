@@ -1,14 +1,16 @@
 console.log(`A bc `);
-//functions
-let sum = (first, second, callback) => {
-    let result = first + second;
-    //callback là sau khi thực hiện một số việc, và sau đó callback sẽ dc thực hiện
-    callback(result);
-}
+//đồng bộ là chạy thứ tự từng dòng từ trên xuống dưới.
 
-let printSum = (result) => {
-    console.log(`Result = `, result);
-}
+//Async là xữ lý không cần thứ tự, có dòng done trước, có dòng done sau.
+//Nhưng vẩn đảm bảo là đầu ra chính xác.
 
-//Call sum
-sum(1, 2, printSum);
+//https://jsonplaceholder.typicode.com/todos/1
+
+console.log(1);
+console.log(2);
+//sleep
+setTimeout(() => {
+    console.log(`run after 3s`);
+    
+}, 3000); //3s
+console.log(4);
