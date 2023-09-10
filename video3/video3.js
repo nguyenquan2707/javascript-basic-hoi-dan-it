@@ -1,16 +1,14 @@
 console.log(`A bc `);
 //functions
-let sum = (first, second) => first + second;
-
-console.log(`sum = `, sum(2,1));
-
-let person = {
-    name: "Q",
-    address: "TV",
-    //methods
-    getName: function() {
-        return this.name;
-    }
+let sum = (first, second, callback) => {
+    let result = first + second;
+    //callback là sau khi thực hiện một số việc, và sau đó callback sẽ dc thực hiện
+    callback(result);
 }
 
-console.log(person.getName());
+let printSum = (result) => {
+    console.log(`Result = `, result);
+}
+
+//Call sum
+sum(1, 2, printSum);
