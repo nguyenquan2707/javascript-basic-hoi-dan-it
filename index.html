@@ -10,26 +10,6 @@
 <body>
     <h1>Functions</h1>
     <h3 id="demo"></h3>
-
-    <button type="button" onclick="loadXMLDoc()">Change Content</button>
-    <script>
-        function loadXMLDoc() {
-            var xhttp = new XMLHttpRequest();
-            //Dù viết ở trên, nhưng phải chờ dòng xhttp.send(); thì nó mới thực hiện
-            xhttp.onreadystatechange = function() {
-                if (this.readyState == 4 && this.status == 200) {
-                console.log("go second...", xhttp);
-                document.getElementById("demo").innerHTML =
-                // this.responseText;
-                this.response;
-                }
-            }; 
-            xhttp.open("GET", "https://jsonplaceholder.typicode.com/todos/1", true);
-            //Asyc có thể thấy ở đây, dòng này nằm sau console.log("go second..."); nhưng lại chạy trước.
-            console.log("Go first....");
-            xhttp.send();
-}
-    </script>
     <script src="./video3/video3.js">
     
     </script>
