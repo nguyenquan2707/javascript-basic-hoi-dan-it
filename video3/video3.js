@@ -26,4 +26,8 @@ let customers = [
     }
 ];
 
-console.log(customers);
+console.log(customers.length);
+
+
+b.push("D");
+console.log(`b=`, b);
