@@ -31,3 +31,26 @@ console.log(customers.length);
 
 b.push("D");
 console.log(`b=`, b);
+
+// 
+let words = ['Quan', 'Tra', 'An', 'A', 'Nguyen'];
+let results = words.filter((element, index) => {
+    console.log(`${index} : ${element}`);
+    return index % 2 == 0;
+});
+
+console.log(results);
+
+// 
+let employees = [
+    {name: "Q", age: 35},
+    {name: "T", age: 34},
+    {name: "A", age: 20},
+    {name: "AA", age: 25},
+];
+
+let filterdEmployees = employees.filter((element, index) => {
+    return element.age > 25;
+});
+
+console.log(filterdEmployees);
