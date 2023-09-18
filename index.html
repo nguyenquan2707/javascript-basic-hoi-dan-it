@@ -10,10 +10,25 @@
         src = "https://cdn.jsdelivr.net/npm/lodash@4.17.20/lodash.min.js">
     </script>
 </head>
-<script src="./video3/video3.js">
-</script>
+
 
 <body>
+    <script>
+        function loadXMLDoc() {
+          var xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+              document.getElementById("demo").innerHTML =
+              this.responseText;
+            }
+          };
+          xhttp.open("GET", "https://jsonplaceholder.typicode.com/todos/1", true);
+          xhttp.send();
+        }
+        </script>
+<div id="demo">
+<button type="button" onclick="loadXMLDoc()">Change Content</button>
+</div>
 </body>
 
 </html>
