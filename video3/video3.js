@@ -26,7 +26,6 @@ function testPromise() {
 
             const data = JSON.parse(xhttp.responseText);
             resolve(data);
-
           } else if (this.readyState == 4 && this.status != 200){
             reject(`Something wrong....`);
               console.log(xhttp.status);
@@ -38,9 +37,13 @@ function testPromise() {
     });
   }
 
+  
+  // Chainning promise
   testPromise().then((data) => {
-    console.log(data)
-  })
-  .catch((reject) => {
-console.log(reject)
+    console.log(`Data1`, data);
+    return testPromise();
+  }).then((data2) => {
+    console.log(`Data2`, data2);
+  }).catch((reject) => {
+    console.log(`reject=`, reject);
   })
