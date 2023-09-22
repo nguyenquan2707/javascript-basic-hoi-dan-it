@@ -1,9 +1,24 @@
-console.log('hi...');
-
-let customers = ['a', 'b', 'c', 'd', 'e'];
-
-let  i = 0;
-while(i < customers.length) {
-    console.log(customers[i]);
-    i ++;
+let day;
+switch(new Date().getDay()) {
+    case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+     day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case 6:
+    day = "Saturday";
 }
+console.log(`day=` + day);
