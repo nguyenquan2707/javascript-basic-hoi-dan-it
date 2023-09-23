@@ -14,23 +14,17 @@
 
 <body>
     <script>
-        function loadXMLDoc() {
-          var xhttp = new XMLHttpRequest();
-          xhttp.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-                //JSON test
-              document.getElementById("demo").innerHTML = JSON.parse(this.responseText).title;
-              console.log(JSON.parse(this.responseText));
-            } else {
-                console.log(xhttp.status);
-            }
-          };
-          xhttp.open("GET", "https://jsonplaceholder.typicode.com/todos/1", true);
-          xhttp.send();
-        }
+         fetch('https://jsonplaceholder.typicode.com/todos/1').then((data) => {
+           let finalData  = data.json();
+           console.log(`data = `, finalData);
+           return finalData;
+        }).then((finalData) => {
+          console.log(finalData);
+        }).catch((reject) => {
+          console.log(reject);
+        })
         </script>
 <div id="demo">
-<button type="button" onclick="loadXMLDoc()">Change Content</button>
 </div>
 </body>
 
