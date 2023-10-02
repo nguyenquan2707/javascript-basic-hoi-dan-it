@@ -1,4 +1,3 @@
-console.log(`A bc `);
 let array = [
     "A", "B", "C", "D"
 ];
